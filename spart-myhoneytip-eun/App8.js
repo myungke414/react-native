@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView} from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, ScrollView } from 'react-native';
 
 const main = 'https://firebasestorage.googleapis.com/v0/b/sparta-image.appspot.com/o/lecture%2Fmain.png?alt=media&token=8e5eb78d-19ee-4359-9209-347d125b322c'
 import data from './data.json';
@@ -38,9 +38,9 @@ export default function App() {
                   <Text style={styles.cardDesc} numberOfLines={3}>{content.desc}</Text>
                   <Text style={styles.cardDate}>{content.date}</Text>
                 </View>
-             </View>)
-          })
-         }
+            </View>)
+        })
+        }
       </View>
     </ScrollView>
   );
