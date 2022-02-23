@@ -36,15 +36,15 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
     backgroundColor: '#fff',
   },
-  textContainer: {
+  textContainer:{
     height:100,
     margin:10,
   },
-  textStyle: {
+  textStyle:{
     textAlign:"center"
   },
 });
