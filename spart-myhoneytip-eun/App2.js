@@ -29,8 +29,8 @@ export default function App() {
             onPress={()=>{
               Alert.alert('팝업 알람입니다!!')
             }}
-          />
-          </View>
+         />
+         </View>
     </SafeAreaView>
   );
 }
