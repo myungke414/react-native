@@ -9,9 +9,7 @@ export default function App() {
   let todayCondition = "흐림"
   //return 구문 밖에서는 슬래시 두개 방식으로 주석
   return (
-    /*
-      return 구문 안에서는 {슬래시 + * 방식으로 주석
-    */
+    /* return 구문 안에서는 {슬래시 + * 방식으로 주석 */
     <ScrollView style={styles.container}>
       <Text style={styles.title}>나만의 꿀팁</Text>
       <Text style={styles.weather}>오늘의 날씨: {todayWeather + '°C ' + todayCondition} </Text>
@@ -25,14 +23,14 @@ export default function App() {
       <View style={styles.cardContainer}>
         {/* 하나의 카드 영역을 나타내는 View */}
         { 
-          tip.map((content,i)=>{
-            return i % 2 == 0 ? (<View style={styles.cardEven} key={i}>
-              <Image style={styles.cardImage} source={{uri:content.image}}/>
-              <View style={styles.cardText}>
+         tip.map((content,i)=>{
+           return i % 2 == 0 ? (<View style={styles.cardEven} key={i}>
+            <Image style={styles.cardImage} source={{uri:content.image}}/>
+            <View style={styles.cardText}>
                 <Text style={styles.cardTitle} numberOfLines={1}>{content.title}</Text>
                 <Text style={styles.cardDesc} numberOfLines={3}>{content.desc}</Text>
                 <Text style={styles.cardDate}>{content.date}</Text>
-              </View>
+            </View>
             </View>) : (<View style={styles.cardOdd} key={i}>
                 <Image style={styles.cardImage} source={{uri:content.image}}/>
                 <View style={styles.cardText}>
@@ -40,7 +38,7 @@ export default function App() {
                   <Text style={styles.cardDesc} numberOfLines={3}>{content.desc}</Text>
                   <Text style={styles.cardDate}>{content.date}</Text>
                 </View>
-              </View>)
+             </View>)
           })
          }
       </View>
@@ -63,7 +61,7 @@ const styles = StyleSheet.create({
     //왼쪽 공간으로 부터 이격
     marginLeft:20
   },
-  weather:{
+  weather: {
     alignSelf:"flex-end",
     paddingRight:20
   },
@@ -79,7 +77,7 @@ const styles = StyleSheet.create({
     //각 속성의 값들은 공식문서에 고대로~ 나와 있음
     alignSelf:"center"
   },
-  middleContainer:{
+  middleContainer: {
     marginTop:20,
     marginLeft:10,
     height:60
@@ -127,7 +125,7 @@ const styles = StyleSheet.create({
     marginTop:10,
     marginLeft:10
   },
-  card:{
+  card: {
     flex:1,
     //컨텐츠들을 가로로 나열
     //세로로 나열은 column <- 디폴트 값임 
@@ -160,7 +158,7 @@ const styles = StyleSheet.create({
     fontSize:10,
     color:"#A6A6A6",
   },
-  cardEven:{
+  cardEven: {
     flex:1,
     flexDirection:"row",
     margin:10,
@@ -170,7 +168,7 @@ const styles = StyleSheet.create({
     borderBottomColor:"#eee",
     paddingBottom:10
   },
-  cardOdd:{
+  cardOdd: {
     flex:1,
     flexDirection:"row",
     margin:10,
