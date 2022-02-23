@@ -20,7 +20,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
     backgroundColor: '#fff',
     //혹시 미리 궁금하신 분들을 위해 언급하자면,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     justifyContent:"center",
     alignContent:"center"
   },
-  imageStyle: {
+  imageStyle:{
     width:"100%",
     height:"100%",
     alignItems:"center",
