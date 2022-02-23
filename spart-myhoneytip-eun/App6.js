@@ -5,17 +5,14 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-  
       <View style={styles.containerOne}>
       </View>
-
       <View style={styles.containerTwo}>
         <View style={styles.innerOne}></View>
         <View style={styles.innerTwo}>
           <View style={styles.content}></View>  
         </View>
       </View>
-
     </View>
   );
 }
