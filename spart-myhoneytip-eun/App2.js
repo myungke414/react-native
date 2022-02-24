@@ -29,22 +29,22 @@ export default function App() {
             onPress={()=>{
               Alert.alert('팝업 알람입니다!!')
             }}
-          />
-          </View>
+         />
+         </View>
     </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
     backgroundColor: '#fff',
   },
-  textContainer: {
+  textContainer:{
     height:100,
     margin:10,
   },
-  textStyle: {
+  textStyle:{
     textAlign:"center"
   },
 });
